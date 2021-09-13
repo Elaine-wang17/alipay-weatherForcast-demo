@@ -1,0 +1,58 @@
+.weather-today {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0rpx auto;
+}
+
+.today-text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 80rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.district {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.weather-icon {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 30rpx auto 0;
+}
+
+.weather-icon image {
+  width: 100%;
+  height: 100%;
+}
+
+.temperature {
+  width: 350rpx;
+  height: 350rpx;
+  margin: 30rpx auto 0;
+  text-align: center;
+  font-size: 100rpx;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer {
+  width: 400rpx;
+  height: 50rpx;
+  text-align: center;
+  margin: 20rpx auto 0;
+}
+
+.weather-icon-tomorrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.footer image {
+  width: 100%;
+  height: 100%;
+}

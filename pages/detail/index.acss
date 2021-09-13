@@ -1,0 +1,117 @@
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.basicWrapper {
+  width: 640rpx;
+  height: 200rpx;
+  margin: 0rpx auto;
+  border-radius: 3%;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.leftInfo {
+  width: 250rpx;
+  height: 200rpx;
+  float: left;
+  position: relative;
+}
+
+.leftInfo view {
+  position: absolute;
+  left: 5rpx;
+  bottom: 0;
+}
+
+.leftInfo text {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.rightInfo {
+  width: 250rpx;
+  height: 200rpx;
+  float: right;
+  position: relative;
+}
+
+.rightInfo > view {
+  position: absolute;
+  bottom: 12rpx;
+  right: 5rpx;
+}
+
+.imageWrapper1 {
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.detailWrapper {
+  width: 700rpx;
+  margin: 30rpx auto 0;
+  padding: 0 15rpx 0;
+}
+
+.detailItem {
+  width: 100%;
+  margin-top: 40rpx;
+}
+
+.detailItemLeft {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+
+.detailItemRight {
+  float: right;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: right;
+}
+
+.forcastWrapper {
+  width: 700rpx;
+  margin: 30rpx auto 0;
+  padding: 0 15rpx 0;
+}
+
+.title {
+  font-size: x-large;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.futureItem {
+  width: 100%;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.degree text {
+  font-size: 25rpx;
+}
+
+.futureIcon {
+  vertical-align: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.futureIcon text {
+  font-size: 25rpx;
+  color: gray;
+}
+
+.weatherIcon {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+}

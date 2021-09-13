@@ -1,0 +1,24 @@
+
+<view class="container" onTap="gotoDetail">
+  <view class="weather-today">
+    <view class="today-text">
+      {{weatherInfo.text}}
+    </view>
+    <view class="district">
+      西湖区
+    </view>
+  </view>
+  <view class="weather-icon">
+    <image mode="scaleToFill" src="../../img/{{weatherInfo.icon}}.png"/>
+  </view>
+  <view class="temperature">
+    {{weatherInfo.temp}}℃
+  </view>
+  <view class="footer">
+    明天
+    <view class="weather-icon-tomorrow">
+      <image mode="scaleToFill" src="../../img/{{futureWeatherInfo[0].iconDay}}.png"/>
+    </view>
+    {{futureWeatherInfo[0].tempMin}}-{{futureWeatherInfo[0].tempMax}}℃
+  </view>
+</view>

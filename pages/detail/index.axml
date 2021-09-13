@@ -1,0 +1,59 @@
+<!-- 今天的基本天气信息 -->
+<view class="basicWrapper">
+  <view class="leftInfo">
+    <view>
+      <text style="font-size: 80rpx">{{weatherInfo.temp}}℃</text>
+      <text style="color: #333; font-size: 25rpx">西湖区</text>
+    </view>
+  </view>
+  <view class="rightInfo">
+    <view>
+      <text style="color: #333; font-size: 25rpx">{{weatherInfo.windDir}}{{weatherInfo.windScale}}级</text>
+      <view class="imageWrapper1">
+        <image mode="scaleToFill" src="../../img/{{weatherInfo.icon}}.png" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 今天的详细天气信息 -->
+<view class="detailWrapper">
+  <view class="detailItem">
+    <text class="detailItemLeft">湿度</text>
+    <text class="detailItemRight">{{weatherInfo.humidity}}%</text>
+  </view>
+  <view class="detailItem">
+    <text class="detailItemLeft">能见度</text>
+    <text class="detailItemRight">{{weatherInfo.vis}}km</text>
+  </view>
+  <view class="detailItem">
+    <text class="detailItemLeft">降水量</text>
+    <text class="detailItemRight">{{weatherInfo.precip}}mm/h</text>
+  </view>
+  <view class="detailItem">
+    <text class="detailItemLeft">气压</text>
+    <text class="detailItemRight">{{weatherInfo.pressure}}百帕</text>
+  </view>
+</view>
+
+<!-- 未来7天天气预报 -->
+<view class="forcastWrapper">
+  <text class="title">未来3天预报</text>
+  <view a:for="{{futureWeatherInfo}}" a:for-item="item" a:for-index="index" class="futureItem">
+    <view class="weekday">
+      <text>周一\n</text>
+      <text style="color: gray; font-size: 25rpx">{{item.fxDate}}</text>
+    </view>
+    <view class="degree">
+      <text>{{item.tempMax}}℃</text>&nbsp
+      <text style="color: gray">{{item.tempMin}}℃</text>
+    </view>
+    <view class="futureIcon">
+      <text>{{item.textDay}}</text>
+      <view class="weatherIcon">
+        <image mode="scaleToFill" src="../../img/{{item.iconDay}}.png"/>
+      </view>
+    </view>
+  </view>
+</view>
+

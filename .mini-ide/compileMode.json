@@ -1,0 +1,8 @@
+{
+  "modes": [
+    {
+      "title": "detail",
+      "page": "pages/detail/index"
+    }
+  ]
+}
